@@ -1,0 +1,77 @@
+#effects {
+    background-color: #eaf5f7;
+    padding: 120px 0;
+}
+
+#effects h2 {
+    text-align: center;
+    font-size: 3em;
+    color: #113e11
+}
+
+#effects h2:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 150px;
+    margin: 15px auto;
+    background-color: #113e11;
+}
+
+#effects form {
+
+}
+
+#effects form > input {
+    display: none;
+}
+
+#effects form > input + label {
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin-bottom: 10px;
+    border: 2px solid #113e11;
+    border-radius: 150px;
+    position: relative;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+#effects form > input + label:before {
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color: #113e11;
+    border-radius: 150px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+#effects form > input:checked + label:before {
+    left: 52px;
+    background-color: #fff;
+}
+
+#effects form > input:checked + label {
+    background-color: #113e11;
+}
+
+#effects form > input + label span {
+    position: absolute;
+    min-width: 280px;
+    left: 103px;
+    top: 3px;
+    font-size: 2em;
+    transition: 0.3s;
+    opacity: 0.25;
+}
+
+#effects form > input:checked + label span {
+    left: 118px;
+    top: 3px;
+    opacity: 1;
+}
